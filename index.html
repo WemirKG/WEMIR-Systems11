@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WEMIR SOLUTIONS — AI Tool Upgrades for Websites</title>
+  <meta name="description" content="WEMIR SOLUTIONS upgrades websites with AI tools. $200 for 2 AI tool integrations. Fast, clean, and future-forward." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Ambient background -->
+  <div class="bg">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+    <canvas id="particles" aria-hidden="true"></canvas>
+  </div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="brand-name">WEMIR <span>SOLUTIONS</span></div>
+          <div class="brand-tag">AI upgrades for websites</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#offer">Offer</a>
+        <a href="#tools">Tools</a>
+        <a href="#process">Process</a>
+        <a href="#proof">Proof</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="top-ctas">
+        <button class="btn ghost" data-open="modal-intake">Get a Quote</button>
+        <button class="btn primary" data-scroll="#offer">Upgrade My Site</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <div class="pill">
+            <span class="dot"></span>
+            <span>New-Age Website Development</span>
+            <span class="sep">•</span>
+            <span>AI Integrations</span>
+            <span class="sep">•</span>
+            <span>Conversion-Ready</span>
+          </div>
+
+          <h1>
+            Turn your website into a <span class="grad">future machine</span>.
+            <br />
+            We install AI tools that <span class="glow">sell, serve, and scale</span>.
+          </h1>
+
+          <p class="sub">
+            WEMIR SOLUTIONS upgrades your existing site by integrating AI tools that boost engagement,
+            automate responses, and increase conversions. Simple offer:
+          </p>
+
+          <div class="offer-slab">
+            <div class="offer-price">
+              <div class="price">$200</div>
+              <div class="label">for <strong>2 AI tools</strong> integrated</div>
+            </div>
+            <div class="offer-meta">
+              <div class="meta">
+                <div class="k">Typical turnaround</div>
+                <div class="v">24–72 hours</div>
+              </div>
+              <div class="meta">
+                <div class="k">Works with</div>
+                <div class="v">Most websites</div>
+              </div>
+              <div class="meta">
+                <div class="k">Delivery</div>
+                <div class="v">Live + tested</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn primary" data-scroll="#offer">Choose My 2 Tools</button>
+            <button class="btn ghost" data-open="modal-playground">See Interactive Demos</button>
+          </div>
+
+          <div class="trust-row">
+            <div class="trust-item">
+              <div class="trust-icon" aria-hidden="true">⚡</div>
+              <div>
+                <div class="t">Fast installs</div>
+                <div class="m">Minimal downtime</div>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon" aria-hidden="true">🛡️</div>
+              <div>
+                <div class="t">Secure</div>
+                <div class="m">Best-practice keys</div>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon" aria-hidden="true">🎛️</div>
+              <div>
+                <div class="t">Custom fit</div>
+                <div class="m">Brand matched UI</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal">
+          <div class="panel-card">
+            <div class="panel-head">
+              <div class="panel-title">Live Upgrade Preview</div>
+              <div class="panel-badges">
+                <span class="badge">Interactive</span>
+                <span class="badge">No fluff</span>
+              </div>
+            </div>
+
+            <div class="terminal" role="region" aria-label="Terminal demo">
+              <div class="term-top">
+                <span class="lamp r"></span><span class="lamp y"></span><span class="lamp g"></span>
+                <span class="term-title">wemir://upgrade</span>
+              </div>
+              <pre class="term-body" id="term"></pre>
+            </div>
+
+            <div class="mini-metrics">
+              <div class="metric">
+                <div class="metric-k">Engagement Lift</div>
+                <div class="metric-v"><span id="mEng">+18</span>%</div>
+              </div>
+              <div class="metric">
+                <div class="metric-k">Lead Capture</div>
+                <div class="metric-v"><span id="mLeads">+24</span>%</div>
+              </div>
+              <div class="metric">
+                <div class="metric-k">Time Saved</div>
+                <div class="metric-v"><span id="mTime">6.2</span> hrs/wk</div>
+              </div>
+            </div>
+
+            <div class="panel-cta">
+              <button class="btn primary full" data-scroll="#offer">Run My Upgrade</button>
+              <button class="btn ghost full" data-open="modal-intake">Talk to WEMIR</button>
+              <p class="hint">Tip: the more specific your goals, the sharper the tools we install.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFER / CONFIGURATOR -->
+    <section id="offer" class="section container">
+      <div class="section-head reveal">
+        <h2>Pick your 2 AI tools for <span class="grad">$200</span></h2>
+        <p class="muted">
+          Choose any two integrations below. We install, style-match, test, and ship. If your site needs
+          light refactoring to support the tools, we’ll flag it before we touch production.
+        </p>
+      </div>
+
+      <div class="config reveal">
+        <div class="config-left">
+          <div class="tool-grid" id="toolGrid" aria-label="AI tools selection"></div>
+
+          <div class="tool-note">
+            <div class="note-title">What counts as a “tool”?</div>
+            <ul>
+              <li>An on-site feature a visitor can use (chat, quiz, lead magnet, generator, etc.).</li>
+              <li>A measurable upgrade tied to conversions (forms, booking, personalization, funnels).</li>
+              <li>A real integration (not just a button) with clean UI + basic analytics hooks.</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="config-right">
+          <div class="summary">
+            <div class="summary-top">
+              <div>
+                <div class="summary-title">Your Upgrade Pack</div>
+                <div class="summary-sub" id="pickCount">Pick 2 tools</div>
+              </div>
+              <div class="summary-price">
+                <div class="p">$<span id="price">200</span></div>
+                <div class="s">Flat fee</div>
+              </div>
+            </div>
+
+            <div class="picked" id="picked"></div>
+
+            <div class="divider"></div>
+
+            <div class="inputs">
+              <label class="field">
+                <span>Website URL</span>
+                <input id="siteUrl" type="url" placeholder="https://yourwebsite.com" autocomplete="url" />
+              </label>
+
+              <label class="field">
+                <span>Primary goal</span>
+                <select id="goal">
+                  <option value="leads">Capture more leads</option>
+                  <option value="sales">Increase sales</option>
+                  <option value="support">Reduce support load</option>
+                  <option value="engagement">Increase engagement</option>
+                  <option value="authority">Look more premium</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span>Notes (optional)</span>
+                <textarea id="notes" rows="4" placeholder="What do you want the tools to do? Any brand colors?"></textarea>
+              </label>
+            </div>
+
+            <div class="actions">
+              <button class="btn primary full" id="checkoutBtn" disabled>Continue to Checkout</button>
+              <button class="btn ghost full" data-open="modal-intake">Not sure? Let WEMIR recommend</button>
+            </div>
+
+            <div class="fineprint">
+              By continuing you agree to basic deployment best practices (staging first when possible),
+              and you confirm you have rights to modify the website.
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- TOOLS / PACKAGE DETAIL -->
+    <section id="tools" class="section container">
+      <div class="section-head reveal">
+        <h2>Tool types we install</h2>
+        <p class="muted">These are examples; we can tailor to your industry and your website stack.</p>
+      </div>
+
+      <div class="cards reveal">
+        <article class="card">
+          <div class="card-kicker">Conversion</div>
+          <h3>Lead & sales boosters</h3>
+          <ul>
+            <li>AI lead magnet quiz + email capture</li>
+            <li>Dynamic pricing / package recommender</li>
+            <li>Smart booking assistant (rules-based + AI copy)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-kicker">Support</div>
+          <h3>Service & automation</h3>
+          <ul>
+            <li>AI FAQ / help widget with guardrails</li>
+            <li>Intake form + auto-summary for you</li>
+            <li>Auto follow-up templates (email/SMS-ready)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-kicker">Experience</div>
+          <h3>Interactive wow factor</h3>
+          <ul>
+            <li>Canvas mini-experience embedded on site</li>
+            <li>On-brand microgame for engagement</li>
+            <li>Animated story sections + live demos</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="callout reveal">
+        <div class="callout-left">
+          <h3>Want “Kling-like” automation later?</h3>
+          <p class="muted">
+            This starter is designed to monetize quickly via a clean offer + payment link.
+            When you’re ready, we can evolve it into a fully automated pipeline (payments → job queue → generation → delivery).
+          </p>
+        </div>
+        <div class="callout-right">
+          <button class="btn ghost" data-open="modal-intake">Ask about full automation</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section container">
+      <div class="section-head reveal">
+        <h2>How the upgrade works</h2>
+        <p class="muted">Zero confusion. Clear steps. Clean delivery.</p>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="step">
+          <div class="num">01</div>
+          <div class="content">
+            <h3>Choose tools + submit URL</h3>
+            <p>We confirm your stack and the cleanest integration approach.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <div class="content">
+            <h3>Staging build (recommended)</h3>
+            <p>We install and style-match your tools in a safe environment first.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <div class="content">
+            <h3>QA + performance pass</h3>
+            <p>Mobile, accessibility, and speed checks so it feels premium.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="num">04</div>
+          <div class="content">
+            <h3>Deploy + handoff</h3>
+            <p>You get documentation, basic maintenance notes, and next-step options.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF -->
+    <section id="proof" class="section container">
+      <div class="section-head reveal">
+        <h2>Proof of capability</h2>
+        <p class="muted">
+          You gave “reference prompts” that demand interactive building. This section positions WEMIR as a team
+          that can embed advanced experiences into real websites.
+        </p>
+      </div>
+
+      <div class="proof-grid reveal">
+        <div class="proof">
+          <div class="proof-title">Interactive Web Builds</div>
+          <p class="muted">Games, canvas tools, dashboards, and drag-drop flows embedded cleanly.</p>
+          <div class="chips">
+            <span class="chip">2D Space Game</span>
+            <span class="chip">Cloud Painter</span>
+            <span class="chip">Customer Journey Flow</span>
+          </div>
+        </div>
+
+        <div class="proof">
+          <div class="proof-title">Business-First UX</div>
+          <p class="muted">Every tool is engineered to convert: attention → trust → action.</p>
+          <div class="chips">
+            <span class="chip">Offer clarity</span>
+            <span class="chip">Friction removal</span>
+            <span class="chip">Checkout path</span>
+          </div>
+        </div>
+
+        <div class="proof">
+          <div class="proof-title">Modern Front-End</div>
+          <p class="muted">Fast, responsive, and built for mobile conversion.</p>
+          <div class="chips">
+            <span class="chip">Accessible</span>
+            <span class="chip">Performance</span>
+            <span class="chip">Clean code</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials reveal">
+        <article class="quote">
+          <p>“The upgrade made my site feel alive. Visitors actually interact now instead of bouncing.”</p>
+          <div class="by">— Service Business Owner</div>
+        </article>
+        <article class="quote">
+          <p>“Clean install, fast turnaround, and it matched my branding perfectly.”</p>
+          <div class="by">— Creator / Entrepreneur</div>
+        </article>
+        <article class="quote">
+          <p>“The tool recommendation was on point. It instantly improved my lead quality.”</p>
+          <div class="by">— Local Business</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section container">
+      <div class="section-head reveal">
+        <h2>FAQ</h2>
+        <p class="muted">Straight answers so people can buy without hesitation.</p>
+      </div>
+
+      <div class="faq reveal" id="faqList">
+        <!-- populated by JS -->
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <div class="brand-mark" aria-hidden="true"></div>
+            <div class="brand-text">
+              <div class="brand-name">WEMIR <span>SOLUTIONS</span></div>
+              <div class="brand-tag">Upgrade your website with AI tools</div>
+            </div>
+          </div>
+          <p class="muted small">
+            © <span id="year"></span> WEMIR SOLUTIONS. Built for the minds of the future.
+          </p>
+        </div>
+
+        <div class="links">
+          <a href="#offer">Offer</a>
+          <a href="#process">Process</a>
+          <a href="#faq">FAQ</a>
+          <button class="linklike" data-open="modal-intake">Contact</button>
+        </div>
+
+        <div class="cta-box">
+          <div class="cta-title">Ready to upgrade?</div>
+          <div class="cta-sub">Pick 2 tools, submit your URL, and we’ll handle the rest.</div>
+          <button class="btn primary full" data-scroll="#offer">Start Upgrade</button>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- MODALS -->
+  <div class="modal" id="modal-intake" role="dialog" aria-modal="true" aria-labelledby="intakeTitle" hidden>
+    <div class="modal-backdrop" data-close="modal-intake"></div>
+    <div class="modal-card">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title" id="intakeTitle">WEMIR Upgrade Intake</div>
+          <div class="muted small">If you’re unsure which tools to pick, we’ll recommend the best 2.</div>
+        </div>
+        <button class="icon-btn" aria-label="Close" data-close="modal-intake">✕</button>
+      </div>
+
+      <form id="intakeForm" class="form">
+        <div class="row">
+          <label class="field">
+            <span>Name</span>
+            <input name="name" required placeholder="Your name" />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input name="email" type="email" required placeholder="you@email.com" />
+          </label>
+        </div>
+
+        <label class="field">
+          <span>Website URL</span>
+          <input name="url" type="url" required placeholder="https://yourwebsite.com" />
+        </label>
+
+        <label class="field">
+          <span>What do you want your website to do better?</span>
+          <textarea name="message" rows="5" required placeholder="More leads, more sales, less support requests, better engagement..."></textarea>
+        </label>
+
+        <div class="row">
+          <label class="field">
+            <span>Industry</span>
+            <input name="industry" placeholder="Real estate, fitness, events, creator..." />
+          </label>
+          <label class="field">
+            <span>Deadline</span>
+            <input name="deadline" placeholder="e.g., this weekend" />
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send Intake</button>
+          <button class="btn ghost" type="button" data-close="modal-intake">Cancel</button>
+        </div>
+
+        <p class="muted small">
+          This demo uses a safe “mailto” handoff. You can swap to Formspree/Tally/Zapier later.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-checkout" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" hidden>
+    <div class="modal-backdrop" data-close="modal-checkout"></div>
+    <div class="modal-card">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title" id="checkoutTitle">Checkout</div>
+          <div class="muted small">Connect your payment link and you can monetize immediately.</div>
+        </div>
+        <button class="icon-btn" aria-label="Close" data-close="modal-checkout">✕</button>
+      </div>
+
+      <div class="checkout">
+        <div class="checkout-summary" id="checkoutSummary"></div>
+
+        <div class="checkout-actions">
+          <a class="btn primary full" id="payLink" href="#" target="_blank" rel="noreferrer">
+            Pay $200 (link placeholder)
+          </a>
+          <button class="btn ghost full" data-open="modal-intake">Need recommendations instead?</button>
+        </div>
+
+        <p class="muted small">
+          Replace the placeholder with your PayPal.me link or a Stripe Payment Link.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-playground" role="dialog" aria-modal="true" aria-labelledby="playTitle" hidden>
+    <div class="modal-backdrop" data-close="modal-playground"></div>
+    <div class="modal-card">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title" id="playTitle">Interactive Playground</div>
+          <div class="muted small">Examples of the kind of interactive modules WEMIR can embed.</div>
+        </div>
+        <button class="icon-btn" aria-label="Close" data-close="modal-playground">✕</button>
+      </div>
+
+      <div class="playgrid">
+        <div class="playcard">
+          <div class="playname">2D Space Game</div>
+          <p class="muted small">Engagement module for landing pages and launches.</p>
+        </div>
+        <div class="playcard">
+          <div class="playname">Employee Skills Matrix</div>
+          <p class="muted small">Internal tool for teams; clean HR UI.</p>
+        </div>
+        <div class="playcard">
+          <div class="playname">Cloud Painter</div>
+          <p class="muted small">Whimsical canvas experience for kids and brands.</p>
+        </div>
+        <div class="playcard">
+          <div class="playname">Customer Journey Flow</div>
+          <p class="muted small">Drag-and-drop diagram modules for consultants.</p>
+        </div>
+        <div class="playcard">
+          <div class="playname">Weather Theatre</div>
+          <p class="muted small">React + Canvas storytelling UI for content sites.</p>
+        </div>
+        <div class="playcard">
+          <div class="playname">Virtual Drum Kit</div>
+          <p class="muted small">Music-studio UI; interactive branded experience.</p>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn primary" data-scroll="#offer" data-close="modal-playground">Pick 2 Tools</button>
+        <button class="btn ghost" data-close="modal-playground">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
